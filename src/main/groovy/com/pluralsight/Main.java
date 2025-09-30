@@ -10,7 +10,7 @@ public class Main {
         String lastName = enterData("Enter your last name: ").trim();
         String suffix = enterData("Enter your suffix (If no suffix just enter: ").trim();
 
-        String fullName = firstName;
+        String fullName = firstName; //checking if middle name and suffix
         if (middleName.length() > 0) {
             fullName = firstName + " " + middleName +".";
         }

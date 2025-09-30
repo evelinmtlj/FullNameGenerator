@@ -15,7 +15,7 @@ public class Main {
             fullName = firstName + " " + middleName +".";
         }
         fullName = fullName + " " + lastName;
-        if (!suffix.isEmpty()) {
+        if (!suffix.isEmpty()) { //use this to check if suffix empty
             fullName = fullName + " " + "," + suffix ;
         }  {
             System.out.print("Your full name is " + fullName );

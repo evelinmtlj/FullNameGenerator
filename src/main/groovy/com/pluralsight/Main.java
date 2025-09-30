@@ -1,0 +1,24 @@
+package com.pluralsight;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){ // asking variables
+        Scanner scanner = new Scanner(System.in);
+String firstName = enterData("Enter your first name: ").trim();
+String middleName = enterData("Enter your Middle name initial (If no middle name just enter): ").trim();
+String lastName = enterData("Enter your last name: ").trim();
+String suffix = enterData("Enter your suffix (If no suffix just enter: ").trim();
+
+String fullName = firstName;
+    }
+
+
+
+    private static String enterData(String data){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(data + " ");
+        return scanner.nextLine();
+
+    }
+}

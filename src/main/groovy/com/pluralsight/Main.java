@@ -10,7 +10,13 @@ String middleName = enterData("Enter your Middle name initial (If no middle name
 String lastName = enterData("Enter your last name: ").trim();
 String suffix = enterData("Enter your suffix (If no suffix just enter: ").trim();
 
-String fullName = firstName;
+String fullName = firstName + " " + lastName;
+if (!middleName.isEmpty()) {
+    System.out.print("Your full name is " + fullName);
+    if (!suffix.isEmpty()){
+        System.out.print(fullName);
+    }
+}
     }
 
 
@@ -20,5 +26,5 @@ String fullName = firstName;
         System.out.print(data + " ");
         return scanner.nextLine();
 
-    }
+    } // creating private to ask input
 }

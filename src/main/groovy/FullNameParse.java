@@ -1,11 +1,14 @@
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class FullNameParse {
      public static void main(String[] args) {
 
-         //use the private method to ask for first,middle,last name
-         String firstLast = enterInput("Enter your first name and last name: ").trim();
-         String firstMiddleLast = enterInput("Enter your first name, middle initial and last name: ").trim();
+         //use the private method to ask for first,last or first,middle,last name
+         String usersName = enterInput("Enter your first name and last name or first, middle initial, and last name:  ").trim();
+// this will split the name into parts
+         String [] nameParts = usersName.split("");
+
 
 
 // create if statements for users with no middle initial

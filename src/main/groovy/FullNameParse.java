@@ -7,8 +7,11 @@ public class FullNameParse {
          //use the private method to ask for first,last or first,middle,last name
          String usersName = enterInput("Enter your first name and last name or first, middle initial, and last name:  ").trim();
 // this will split the name into parts
-         String [] nameParts = usersName.split("");
-
+         String [] nameParts = usersName.split(" ");
+// naming the parts
+         String firstName = nameParts[0];
+         String middleInitial = nameParts[1];
+         String lastName = nameParts[2];
 
 
 // create if statements for users with no middle initial
